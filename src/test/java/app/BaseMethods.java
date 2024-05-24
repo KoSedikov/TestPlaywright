@@ -7,36 +7,33 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
+import java.awt.*;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 import java.util.UUID;
 
 public class BaseMethods extends PageBuilders {
+
     private Browser browser;
     protected Page page;
     private BrowserContext context;
-    private Boolean isTraceEnabled = false;
-
+    private final Boolean isTraceEnabled = false;
 
     @BeforeClass
     public void setUp()
     {
-        String[] args = {"--start-maximized"};
 
         browser = Playwright
                 .create()
                 .chromium()
                 .launch(new BrowserType
                         .LaunchOptions()
-                        .setArgs(Arrays.asList(args))
                         .setHeadless(false)
                         .setChannel("chrome"));
-
-        context = browser.newContext();
+        context = browser.newContext(new Browser.NewContextOptions().setViewportSize(getWeight(), getHeight()));
 
         // Трейсинг
         if(isTraceEnabled)
@@ -88,6 +85,24 @@ public class BaseMethods extends PageBuilders {
             Allure.addAttachment("trace.zip", new ByteArrayInputStream(Files.readAllBytes(tracePath)));
         }
 
+    }
+
+//    public static <T> boolean compareTwoValues(final T expected, final T actual, final String message)
+//    {
+//        if(actual == expected)
+//        {
+//            Allure.getLifecycle().getCurrentTestCaseOrStep().
+//        }
+//    }
+
+    private int getWeight()
+    {
+        return (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+    }
+
+    private int getHeight()
+    {
+        return (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
     }
 
 }

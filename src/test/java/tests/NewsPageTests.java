@@ -1,7 +1,7 @@
 package tests;
 
 import app.BaseMethods;
-import io.qameta.allure.junit4.DisplayName;
+import io.qameta.allure.Description;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -18,6 +18,7 @@ public class NewsPageTests extends BaseMethods {
     }
 
     @Test
+    @Description("Проверка статей в разделе Новости")
     public void checkNewsPage()
     {
         mainPage()
@@ -27,7 +28,7 @@ public class NewsPageTests extends BaseMethods {
     }
 
     @Test
-    @DisplayName("Проверка статей в разделе Новости")
+    @Description("Проверка статей в разделе Новости")
     public void checkArticlesTest(){}
 
 }

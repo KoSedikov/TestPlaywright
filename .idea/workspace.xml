@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbb92aa7-91e3-4d3f-801d-a6aaedb75aed" name="Changes" comment="First Commit&#10;Creating Architecture">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageElements/BasePageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageElements/NewsPageElements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageSteps/BasePageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageSteps/NewsPageSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/NewsPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/app/PageBuilders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/PageBuilders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageElements/AuthorizationPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageElements/AuthorizationPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageElements/MainPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageElements/MainPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageSteps/AuthorizationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageSteps/AuthorizationSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageSteps/MainPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageSteps/MainPageSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/app/BaseMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/app/BaseMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageSteps/NewsPageSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageSteps/NewsPageSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/AuthorizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/AuthorizationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/MainPageTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/NewsPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/NewsPageTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,8 +92,9 @@
   "keyToString": {
     "Gradle.AuthorizationTest.authTest.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
-    "Gradle.MainPageTests.checkMainHeaderLink.executor": "Debug",
+    "Gradle.MainPageTests.checkMainHeaderLink.executor": "Run",
     "Gradle.MainPageTests.checkNewsHeaderLink.executor": "Run",
+    "Gradle.MainPageTests.executor": "Run",
     "Gradle.NewsPageTests.checkNewsPage.executor": "Debug",
     "Gradle.TestPlaywright [:Main.main()].executor": "Run",
     "Gradle.TestPlaywright [allureServe].executor": "Run",
@@ -130,7 +122,31 @@
       <recent name="pageSteps" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TestPlaywright [allureServe]">
+  <component name="RunManager" selected="Gradle.MainPageTests.checkMainHeaderLink">
+    <configuration name="MainPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.MainPageTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="MainPageTests.checkMainHeaderLink" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -145,30 +161,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.MainPageTests.checkMainHeaderLink&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="MainPageTests.checkNewsHeaderLink" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.MainPageTests.checkNewsHeaderLink&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -249,11 +241,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MainPageTests.checkMainHeaderLink" />
+        <item itemvalue="Gradle.MainPageTests" />
         <item itemvalue="Gradle.TestPlaywright [allureServe]" />
         <item itemvalue="Gradle.TestPlaywright [test]" />
         <item itemvalue="Gradle.NewsPageTests.checkNewsPage" />
-        <item itemvalue="Gradle.MainPageTests.checkNewsHeaderLink" />
-        <item itemvalue="Gradle.MainPageTests.checkMainHeaderLink" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +276,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716557881737</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Commit&#10;Creating Architecture">
+      <option name="closed" value="true" />
+      <created>1716587344473</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716587344473</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +309,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/tests/NewsPageTests.java</url>
-          <line>24</line>
+          <line>25</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
