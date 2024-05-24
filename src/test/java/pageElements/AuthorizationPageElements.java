@@ -2,5 +2,5 @@ package pageElements;
 
 public class AuthorizationPageElements {
 
-    public static String baseUrl = "http://www.amm.vsu.ru/";
+    public static final String MAIN_URL = "http://www.amm.vsu.ru/";
 }

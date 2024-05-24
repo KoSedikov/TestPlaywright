@@ -8,12 +8,18 @@ public class MainPageSteps extends MainPageElements {
 
 
     @Step
-    public void headerLink(Page page, String linkName)
-    {
-        //String link = String.format(MAIN_HEADER_LINK, linkName);
+    public void headerLink(Page page, String linkName) {
+
+        String link = String.format(MAIN_HEADER_LINK, linkName);
 
         page
-                .locator(MAIN_HEADER_LINK)
+                .locator(link)
                 .click();
+
+    }
+
+    @Step
+    public void checkPageByHeaderLink(){
+
     }
 }
